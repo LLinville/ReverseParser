@@ -12,10 +12,19 @@ class TokenType:
         self.examples.append(tokenExample)
 
     def randomExample(self):
-        totalWeight = sum([example.weight for example in self.examples])
-        target = random.randrange(0,totalWeight)
+        totalAdjustedWeight = 0
+        for example in self.examples:
+            if example.weight == 0:
+                totalAdjustedWeight += 1
+            else:
+                totalAdjustedWeight += example.weight
+        averageWeight = totalAdjustedWeight * 1.0 / len(self.examples)
+        target = random.randrange(0,totalAdjustedWeight)
         weightSoFar = 0
         for example in self.examples:
-            weightSoFar += example.weight
+            if example.weight == 0:
+                weightSoFar += averageWeight
+            else:
+                weightSoFar += example.weight
             if weightSoFar > target:
                 return example

@@ -70,11 +70,6 @@ class Reader:
 
         return self.nodeTypeDict
 
-
-reader = Reader()
-tokenTypeDict = reader.readGrammarFile("FileFormat.g")
-print tokenTypeDict
-
 # tdict = {}
 # tdict["noun"] = TokenType("noun")
 # tdict["noun"].addExample(TokenExample("noun",["word1"]))

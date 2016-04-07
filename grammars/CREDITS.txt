@@ -1,0 +1,3 @@
+Many of the grammars featured here are taken from http://www-cs-faculty.stanford.edu/~zelenski/rsg/
+
+I give credit to their respective authors, and thanks to Stanford University professor Julie Zelenski
