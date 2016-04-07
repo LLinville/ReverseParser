@@ -2,6 +2,7 @@ text outside braces is ignored
 
 braces to open the definition of a token go on their own line
 
+Special tokens include <newline> <space> and <number #-#>
 {
     //whitespace before lines is ignored
     //two slashes start a comment
