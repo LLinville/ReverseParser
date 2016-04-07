@@ -2,7 +2,7 @@ text outside braces is ignored
 
 braces to open the definition of a token go on their own line
 
-Special tokens include <newline> <space> and <number #-#>
+Special tokens include <newline> <space> <empty> and <number #-#>
 {
     //whitespace before lines is ignored
     //two slashes start a comment
@@ -23,6 +23,9 @@ Special tokens include <newline> <space> and <number #-#>
 
     //the weight can be one
     a <noun> <verb_s> ; 1
+
+    //a semicolon or other special characters can be used as long as there is still a closing semicolon
+    i <verb> ; she <verb_s> ;
 
     //the token definition ends with this brace
 }

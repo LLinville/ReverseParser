@@ -1,2 +1,17 @@
 File format:
 see FileFormat.g
+
+Weights:
+A weight of zero represents no weight was supplied in the TokenExample definition.
+This default weight will be dynamically replaced by the average weight of all examples of the token type when selecting a random example.
+
+//dictionary of nodeName:GrammarNode
+nodeTypeDict
+
+Token:
+    name
+    examples[]
+
+TokenExample:
+    tokenName
+    array of strings representing a single possible forward derivation
