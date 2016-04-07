@@ -21,7 +21,7 @@ braces to open the definition of a token go on their own line
     the <noun> <verb_s> <adverb> ;
 
     //the weight can be one
-    a <noun> <verb_s>
+    a <noun> <verb_s> ; 1
 
     //the token definition ends with this brace
 }
