@@ -7,9 +7,9 @@ class Reader:
         if nodeTypeDict is None:
             #dictionary of the pairs tokenName:TokenType
             self.nodeTypeDict = {
-                "<space>":TokenType("<space>", examples = [" "]),
-                "<empty>":TokenType("<empty>", examples = []),
-                "<newline>":TokenType("<newline>", examples = ["\n"])
+                "<space>":TokenType("<space>", examples = [TokenExample("<space>",[" "])]),
+                "<empty>":TokenType("<empty>", examples = [TokenExample("<empty>",[" "])]),
+                "<newline>":TokenType("<newline>", examples = [TokenExample("<newline>",["\n"])])
             }
 
         if reservedTokenTypeNames is None:
